@@ -1,0 +1,26 @@
+.khung{
+    text-align: center;
+    background-color:#656f4e;  
+    font-family: "thasadith", sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+a:-webkit-any-link{
+    color: white;
+    text-decoration: none;
+}
+.navi{
+    margin:0 0 0 0;
+}
+.item{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20.5px;
+}
+.item:hover{
+    text-decoration: underline;
+    text-decoration-thickness:1.18px;
+    text-underline-offset:5px;
+    background-color: #545d3f;
+}

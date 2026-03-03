@@ -1,0 +1,103 @@
+.app {
+    position: relative;
+    background-color: #979f85;
+    width: 50%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+body {
+    background-color: #43413f;
+
+}
+
+/* .app{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 30px;
+} */
+.quiz {
+    padding: 20px 0;
+}
+
+.h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fffce3;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s;
+    border-width:1.5px;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: white;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #5c6645;
+    color: #fff;
+    width: 150px;
+    font-weight: 200;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+    border-radius: 4px;
+}
+
+h1 {
+    position: absolute;
+    top: -30px;
+    left: 22%;
+    transform: translateX(-50%);
+    background-color: #5c6645;
+    color: #fff;
+    font-size: 25px;
+    padding: 14px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Canva Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    
+}
+
+.correct {
+    background: #b9bc5b;
+    color: white;
+    /* border: none; */
+}
+
+.incorrect {
+    background: #c86d70;
+    color: #fff;
+
+}
+#question{
+    font-family: 'thasadith', sans-serif;
+}

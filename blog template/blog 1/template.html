@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Recycling at Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatee.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="game2.css">
+</head>
+
+<body>
+    <header class="navi">
+        <nav id="navi">
+            <ul class="nav-list" id="navlist">
+                <li><a href="/pagehome/home.html" class="item">Home</a></li>
+                <li><a href="/pagehome/about.html" class="item">About</a></li>
+                <li><a href="/blog listing/blglist.html" class="item">Blog</a></li>
+            </ul>
+            <i class="bi bi-list-ul" id="listicon" onclick="toggleMenu()"></i>
+        </nav>
+    </header>
+
+    <div class="khungtren">
+        <style>
+            body {
+                background-image: url(./pexels-photo-167698.jpeg);
+                color: white;
+            }
+        </style>
+    </div>
+
+    <div class="boc">
+        <div class="tieude">
+            <p class="dmy"> </p>
+            <p class="td">DIY Recycling at Home</p>
+            <a href="/blog listing/blglist.html" class="back">&lt; Back</a>
+        </div>
+    </div>
+
+    <div class="blog">
+        <h1 class="tdmoiphan">1. Why should you DIY recycled crafts?</h1>
+        <p class="blogg" id="a">
+            ♻️ <strong>Reduce Waste</strong> – Every plastic bottle or milk carton reused is one less item in the landfill.<br>
+            💰 <strong>Save Money</strong> – No need to buy new pen holders, plant pots, or picture frames.<br>
+            💡 <strong>Boost Creativity</strong> – You learn how to mix colors, craft, and look at everyday objects from a fresh perspective.<br>
+            💚 <strong>Personalize Your Space</strong> – Your study corner will have a "green" vibe and a unique personality.
+        </p>
+        <h1 class="tdmoiphan">2. Turn your study corner into your own "Green Zone"</h1>
+        <p class="blogg" id="a">
+            - Decorating your desk with handmade items is both adorable and gives you a sense of achievement.<br>
+            - Place small plants in recycled pots and add soft warm lights to make your study space cozy.<br>
+            - Hang a green quote board: "Create from waste – Add value to the Earth."<br>
+            - If friends drop by, they’ll surely ask:<br>
+            "Whoa, this jar is so pretty! Where did you buy it?"<br>
+            "I made it myself!"
+        </p>
+
+        <img src="7225086.jpg" alt="Recycled Decor" class="anh1">
+
+        <h1 class="tdmoiphan">3. Create with your hands, inspire with your heart</h1>
+        <p class="blogg" id="a">
+            - When you make a recycled item, you're not just helping the environment; you're inspiring others.<br>
+            - Try sharing your work on social media – you might just spark a "Green Study Space" movement at your school!
+        </p>
+
+        <button class="quizz" data-bs-toggle="modal" data-bs-target="#reg-modal" onclick="openPopup()">
+            <i class="bi bi-controller"></i> play quiz
+        </button>
+    </div>
+
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="app">
+                        <h1 class="questionNumber" id="questionNumber">Question 1</h1>
+                        <div class="quiz">
+                            <h2 id="question">Question goes here</h2>
+                            <div id="answer-buttons">
+                                <button class="btn">Option 1</button>
+                                <button class="btn">Option 2</button>
+                                <button class="btn">Option 3</button>
+                                <button class="btn">Option 4</button>
+                            </div>
+                        </div>
+                        <button id="next-btn">Next</button>
+                    </div>
+                    <script src="game2.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

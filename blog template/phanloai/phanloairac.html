@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="phanloairac.css">
+        <link rel="stylesheet" href="game2.css">
+</head>
+<header class="navi">
+    <nav id="navi" >
+        <ul class="nav-list" id="navlist" >
+        <li><a href="/pagehome/home.html" class="item">Home</a></li>
+        <li><a href="/pagehome/about.html" class="item">About</a></li>
+        <li><a href="/blog listing/blglist.html" class="item">Blog</a></li>
+        <!-- <li><a href="#" class="item">Contact</a></li> -->
+        </ul>
+        <i class="bi bi-list-ul" id="listicon" onclick="toggleMenu()"></i>
+    </nav>
+</header>
+<body>
+    <div class="boc">
+        <div class="tieude">
+            <p class="dmy"> </p>
+            <p class="td">The Art of Sorting</p>
+            <a href="/blog listing/blglist.html" class="back">&lt;back</a>
+        </div>
+    </div>
+    <section class="phanchinh">
+        <div class="muc1">
+            <p class="td1">1. How many types of waste are there?</p>
+        <p class="duoitd1">Waste isn't just "trash." When sorted correctly, it becomes a valuable resource! Here are the two primary categories:</p>
+    </div>
+    <div class="rachuuco">
+        <p><strong>Organic Waste</strong> – Biodegradable and nutrient-rich<br>
+            | Examples: | Food scraps, fruit peels, leaves, grass clippings, tea bags, eggshells... | <br>
+            ➡️ Pro-tip: Once processed, these can be turned into nutrient-dense compost for your garden!
+        </p>
+        </div>
+        <img src="./organicwaste.png" alt="#" class="rachuucopic">
+    </section>
+    <div class="muchinh2">
+        <div class="ractaiche">
+            <p>♻️ <strong>Recyclables:</strong> Plastic bottles, paper, cardboard, aluminum cans... <br>
+            ➡️ These items are cleaned and reprocessed into brand-new products.
+        </p>
+            <img src="./ractaiche.png" alt="#" class="ractaichepic">
+        </div>
+        <div class="rackotaiche">
+            <p>🚫 <strong>Non-recyclable or difficult to recycle:</strong> Ceramics, porcelain, broken glass, unidentified flexible plastics, contaminated materials. <br>
+                ➡️ These items are either sent to landfills or incinerated at a high cost.
+            </p>
+        </div>
+        <img src="./rackotaiche.png" alt="" class="rakhongthetaiche">
+        <!-- <img src="./khongtaichengang.png"alt="#" class="rackhongtaichengang"> -->
+
+    </div>
+    <section class="muc2">
+        <div class="td2">
+            <p>2. How to Read Recycling Codes</p>
+        </div>
+        <p class="duoitd2">Every plastic product has a triangular recycling symbol with a number from 1 to 7 inside. This is the "identity card" for different types of plastic:
+        </p>
+        <div class="bang">
+            <table class="bang">
+                <tr>
+                        <th>Code</th>
+                        <th>Common Items</th>
+                        <th>Recyclable?</th>
+                        <th>Storage Temp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 – PETE</td>
+                        <td>Water bottles, packaging</td>
+                        <td>✅ Yes (limit reuse)</td>
+                        <td>Below 40°C</td>
+                    </tr>
+                    <tr>
+                        <td>2 – HDPE</td>
+                        <td>Milk jugs, detergent bottles</td>
+                        <td>✅ Safe & highly recyclable</td>
+                        <td>Below 120°C</td>
+                    </tr>
+                    <tr>
+                        <td>3 – PVC</td>
+                        <td>Raincoats, water pipes</td>
+                        <td>⚠️ Not recommended</td>
+                        <td>Releases toxins above 81°C</td>
+                    </tr>
+                    <tr>
+                        <td>4 – LDPE</td>
+                        <td>Noodle bags, paper milk cartons</td>
+                        <td>✅ Recyclable, do not reuse often</td>
+                        <td>Below 80°C</td>
+                    </tr>
+                    <tr>
+                        <td>5 – PP</td>
+                        <td>Yogurt cups, plastic spoons</td>
+                        <td>✅ Very safe & highly recyclable</td>
+                        <td>Below 120°C</td>
+                    </tr>
+                    <tr>
+                        <td>6 – PS</td>
+                        <td>Styrofoam cups, food containers</td>
+                        <td>❌ Not recyclable</td>
+                        <td>Deforms and toxic with heat</td>
+                    </tr>
+                    <tr>
+                        <td>7 – Other</td>
+                        <td>Phone cases, electronics</td>
+                        <td>❌ Not recyclable</td>
+                        <td>Contains many impurities</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="tip">🧐 Quick Tip: If you're unsure, look for the triangle symbol on the bottom of the product—that's your recycling code!</p>
+        </div>
+        <!-- <button class="quiz" onclick="openGame()"><i class="bi bi-controller"></i> play quiz</button>
+        <script>
+  function openGame() {
+    window.location.href = "dự án mt 2/game/game2.html";
+  } --><button class="quizz" data-bs-toggle="modal" data-bs-target="#reg-modal" onclick="openPopup()"><i
+                class="bi bi-controller"></i> play quiz</button>
+        </div>
+        <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="app">
+                            <h1 id="questionNumber">Question 1</h1>
+                            <div class="quiz">
+                                <h2 id="question">question goes here </h2>
+                                <div id="answer-buttons">
+                                    <button class="btn">ans 1</button>
+                                    <button class="btn">ans 2</button>
+                                    <button class="btn">ans 3</button>
+                                    <button class="btn">ans 4</button>
+                                </div>
+                            </div>
+                            <button id="next-btn">Next</button>
+                        </div>
+                        <script src="game2.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </script>
+    </section>
+<script src="home.js"></script>
+</body>
+
+</html>

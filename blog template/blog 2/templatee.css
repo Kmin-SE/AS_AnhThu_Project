@@ -1,0 +1,242 @@
+.td {
+    font-family: "thasadith", sans-serif;
+    font-size: 60px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dmy {
+    font-family: 'muli', sans-serif;
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-top: 3%;
+}
+
+.back {
+    font-family: 'muli', sans-serif;
+    font-size: 24px;
+    margin-top: 0px;
+    color: white;
+    text-decoration: none;
+}
+.back:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.tdmoiphan{
+    margin-top: 0%;
+    position: relative;
+    margin-left: 12%;
+   display: inline-block;
+   
+}
+
+.tieude {
+    /* position: absolute; */
+    background-color: #656f4e;
+    color: white;
+    display: inline-block;
+    padding-left: 50px;
+    justify-content: center;
+    padding-right: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    /* z-index: 3; */
+    padding-bottom: 30px;
+}
+
+.boc {
+    /* display: flex; */
+    padding-top: 110px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.blog {
+    /* margin-top: 125px; */
+    /* position: absolute; */
+    font-size: 25px;
+    border: 1px #31322d;
+    background-color: #31322d;
+    justify-items: center;
+    z-index: 2;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.blogg {
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+body {
+    position: relative;
+}
+#listicon {
+    color: white;
+    display: none;
+}
+.anh1 {
+    width: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+#a {
+    padding-top: 0%;
+}
+
+.quizz {
+    background-color: #656f4e;
+    font-family: 'thasadith', sans-serif;
+    color: white;
+    height: 59px;
+    font-size: 28px;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    padding-top: 10px;
+    /* margin-right: 700px; */
+}
+
+.quizz:hover {
+    background-color: #5c6645;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    background-color: #41441c;
+    font-family: "thasadith", sans-serif;
+    font-size: 25px;
+    gap: 40px;
+    padding-left: 15%;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    /* padding: 20px; */
+}
+
+a:-webkit-any-link {
+    color: white;
+}
+
+.navi { 
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    margin: 0 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #41441c;
+    transition: transform 0.2s ease-in-out;
+}
+.nav-hidden {
+    transform: translateY(-100%); 
+}
+
+.item {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20.5px;
+    position: relative;
+    text-decoration: none;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-out;
+}
+
+.item:hover {
+    text-decoration: none;
+    /* text-decoration-thickness: 1.18px;
+    text-underline-offset: 5px; */
+    background-color: #292b12;
+}
+
+.item:hover::after {
+    width: calc(100% - 40px);
+}
+
+@media(max-width: 664.35px) {
+
+    .navi {
+        margin-top: 0px;
+    }
+
+    #listicon {
+        font-size: 36px;
+        display: block;
+        margin-top: 0;
+        margin-left: 10px;
+        position: fixed;
+        z-index: 999;
+        top: 15px;
+    }
+
+    #navlist {
+        /* display: none; */
+        position: fixed;
+        z-index: 998;
+    }
+
+    li {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .item {
+        display: block;
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    nav .navlist li:hover {
+        background-color: #292b12;
+    }
+
+    nav .nav-list {
+        flex-direction: column;
+        position: fixed;
+        top: 0%;
+        left: -50%;
+        width: 50%;
+        padding-left: 0px;
+        height: 100%;
+        margin-top: 0;
+        justify-content: normal;
+        padding-top: 20%;
+        height: 100%;
+        transition: left 0.3s ease-in-out;
+    }
+    .show-menu {
+    left: 0 !important;
+}
+}
